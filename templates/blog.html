@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Blog{% endblock %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <h1>Blog</h1>
+
+  <ul>
+  {% for post in posts %}
+    <li><h4><a href="">{{ post[1] }}</a></h4></li>
+  {%- endfor %}
+  </ul>
+{% endblock %}
