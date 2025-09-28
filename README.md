@@ -6,9 +6,13 @@ Web Application based on Flask
     - Post
     - Category
     - Tag
-- Authentication
 - Administration Panel
-- User
+- User Management (Register\Login)
+    - Roles:
+        - Admin (has access to dashboard)
+        - User (has access to some features but not to the dashboard)
+- Localization
+    - Two languages for now (English and Persian)
 
 # Dependencies
 - **UI:** Materialize CSS, Alpine.js
