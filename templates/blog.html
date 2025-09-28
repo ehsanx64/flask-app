@@ -3,15 +3,17 @@
 {% block title %}Blog{% endblock %}
 
 {% block head %}
-  {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block content %}
-  <h1>Blog</h1>
+<h1>Blog</h1>
 
-  <ul>
-  {% for post in posts %}
-    <li><h4><a href="">{{ post[1] }}</a></h4></li>
-  {%- endfor %}
-  </ul>
+<ul>
+    {% for post in posts %}
+    <li>
+        <h4><a href="">{{ post[1] }}</a></h4>
+    </li>
+    {%- endfor %}
+</ul>
 {% endblock %}

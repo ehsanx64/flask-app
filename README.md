@@ -11,5 +11,6 @@ Web Application based on Flask
 - User
 
 # Dependencies
-- **UI:** Materialize CSS
+- **UI:** Materialize CSS, Alpine.js
 - **Templating:** Jinja2
+- **Database:** SQLite

@@ -3,15 +3,47 @@
 {% block title %}Welcome{% endblock %}
 
 {% block head %}
-  {{ super() }}
-  <style type="text/css">
-    .important { color: #336699; }
-  </style>
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
 {% endblock %}
 
 {% block content %}
-  <h1>Index</h1>
-  <p class="important">
-    Welcome on my awesome homepage.
-  </p>
+<h1>Welcome to {{ app_name }}</h1>
+<p>This simple website is my playground for Flask.</p>
+<h3>Components</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col s12 l6">
+            <h4>Backend</h4>
+            <ul>
+                <li>
+                    <b>Framework:</b>&nbsp;<span>Flask</span>
+                </li>
+                <li>
+                    <b>Templating:</b>&nbsp;<span>Jinja2</span>
+                </li>
+                <li>
+                    <b>Database:</b>&nbsp;<span>SQLite</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12 l6">
+            <h4>Frontend</h4>
+            <ul>
+                <li>
+                    <b>UI Kit:</b>&nbsp;<span>Materialize CSS</span>
+                </li>
+                <li>
+                    <b>UI Library:</b>&nbsp;<span>Alpine.js</span>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</div>
+
+
 {% endblock %}
