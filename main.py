@@ -30,6 +30,10 @@ init_db()
 def home():
     return render_template("welcome.html")
 
+@app.route("/playground")
+def playground():
+    return render_template("playground.html")
+
 @app.route("/blog")
 def blog(posts=None):
     db = get_db()
