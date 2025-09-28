@@ -11,4 +11,53 @@
 {% block content %}
 <h2>Playground</h2>
 <p>This is the Alpine.js playground</p>
+
+<h3>Counter</h3>
+<div id="playground-counter" x-data="CounterApp">
+    <form action="#">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s6">
+                    <strong>Counter Value:</strong>&nbsp;
+                    <span x-text="count"></span>
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn"
+                        x-bind:class="count >= 10 ? 'disabled' : ''" 
+                        @click="onPlusClick">
+                        <i class="material-icons dp48">add</i>
+                    </a>
+                    <a class="waves-effect waves-light btn" 
+                        x-bind:class="count <= 0 ? 'disabled' : ''"
+                        @click="onMinusClick">
+                        <i class="material-icons dp48">remove</i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <input type="range" min="0" max="10" x-bind:value="count" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    var CounterApp = {
+        count: 0,
+
+        onPlusClick: function(evt) {
+            if (this.count < 10) {
+                this.count++;
+            }
+        },
+
+        onMinusClick: function(evt) {
+            if (this.count > 0) {
+                this.count--;
+            }
+        },
+    }
+</script>
 {% endblock %}
