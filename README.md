@@ -1,7 +1,7 @@
 # flask-app
 Web Application based on Flask
 
-# Features
+## Features
 - Blog
     - Post
     - Category
@@ -14,7 +14,10 @@ Web Application based on Flask
 - Localization
     - Two languages for now (English and Persian)
 
-# Dependencies
+## Dependencies
 - **UI:** Materialize CSS, Alpine.js
 - **Templating:** Jinja2
 - **Database:** SQLite
+
+## Issues
+- [ ] Styling for the active navbar menu item
