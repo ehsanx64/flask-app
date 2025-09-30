@@ -1,4 +1,4 @@
-# flask-app
+# flaskit
 Web Application based on Flask.
 
 The main idea behind this project is to play with Flask, Materialize and
